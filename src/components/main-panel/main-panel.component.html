@@ -1,0 +1,35 @@
+<div class="card outer-panel ">
+        <div class="card-block p-2">
+                <!-- <img src="/assets/vector.svg" class="bg-vector"/> -->
+                <div class="card-body">
+                    <div class="d-flex flex-column justify-content-center align-items-center gap-3">
+                        <div>
+                            <h2 style="font-size:32px;z-index: 999;">Our Collection</h2>
+                        </div>
+                        <div>
+                            <p class="content-head">Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly 
+                                roasted in small batches and shipped fresh weekly.</p>
+                        </div>
+                        <div>
+                            <tabset [vertical]="false" type="pills">
+                                <tab heading="All Products">
+                                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 mt-3 pt-3">
+                                        <div *ngFor="let coffee of coffeeLists" style="margin-bottom:30px">
+                                            <app-card  [data]="coffee"></app-card>
+                                        </div>
+                                    </div>
+                                </tab>
+                                <tab heading="Available Now">
+                                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 mt-3 pt-3">
+                                    <div *ngFor="let availableCoffee of isAvailableCoffee" style="margin-bottom:30px">
+                                        <app-card  [data]="availableCoffee"></app-card>
+                                    </div>
+                                </div>
+                                </tab>
+                              </tabset>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>

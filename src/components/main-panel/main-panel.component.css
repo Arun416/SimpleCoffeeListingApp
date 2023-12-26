@@ -1,0 +1,64 @@
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 50px; /* Added */
+  top: -20 !important;
+}
+
+.outer-panel {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  background: #1b1d1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  padding: 65px;
+  color: white;
+}
+
+@media screen and (max-width: 640) {
+  .outer-panel {
+    border-radius: 14px;
+    padding: 25px;
+  }
+}
+
+.content-head {
+  color: #6f757c;
+  font-size: 16px;
+  max-width: 450px;
+  text-align: justify;
+  z-index: 9999;
+}
+
+::ng-deep .nav-pills {
+  --bs-nav-pills-link-active-bg: #6f757c;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+}
+
+::ng-deep .nav {
+  --bs-nav-link-color: white;
+  font-size: 16px;
+  font-family: inherit;
+  --bs-nav-link-hover-color: white;
+}
+
+tab {
+  font-size: 12px !important;
+}
+
+.bg-vector {
+  color: #f6c768;
+  background-image: url("../../assets/vector.svg");
+  background-size: cover;
+  position: absolute;
+  float: right;
+  right: 230px;
+  top: 20px;
+  z-index: 1;
+}

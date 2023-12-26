@@ -1,0 +1,58 @@
+.coffee-cards {
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+  background: #1b1d1f;
+}
+
+.card-img-top {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.price-tag {
+  width: 55px;
+  height: 23px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  text-align: center;
+  align-self: center;
+  padding-top: 2px;
+  background: #bee3cc;
+  color: black;
+}
+
+.coffee-rates {
+  vertical-align: middle;
+}
+
+.coffee-vote-counts {
+  color: #6f757c;
+}
+
+.badge {
+  position: absolute;
+  max-width: 80px;
+  top: 10px;
+  vertical-align: middle;
+  padding-bottom: 8px;
+  background-color: #f6c768;
+}
+
+.coffee-availstatus {
+  color: #ed735d;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.trending-badge {
+  padding-left: 5px;
+}

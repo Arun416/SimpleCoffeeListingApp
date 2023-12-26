@@ -1,0 +1,22 @@
+.simpleCoffeelist-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #111315;
+}
+
+.background-image {
+  width: 100%;
+  height: 45%;
+  background-image: url("/src/assets/bg/bg-cafe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.coffeeList-panel {
+  top: 17%;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+}

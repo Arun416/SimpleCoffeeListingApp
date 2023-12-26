@@ -1,0 +1,23 @@
+<div class="conatiner mb-3">
+    <div class="card coffee-cards" style="cursor: pointer;">
+        <img [src]="data.image" class="card-img-top" alt="...">
+        <div class="trending-badge">
+            <span class="badge rounded-pill text-dark" *ngIf="data.popular">Popular</span>
+        </div>
+        <div class="d-inline-flex justify-content-between align-items-center mt-1 pe-none">
+            <h5 class="card-title  ">{{data.name}}</h5>
+            <span class="price-tag ">{{data.price}}</span>
+        </div>
+        <div class="d-inline-flex justify-content-between align-items-center pe-none">
+            <p style="font-size:16px"><img *ngIf="data.votes>0" src="assets/Star_fill.svg"/>
+                <img *ngIf="data.votes<=0" src="assets/Star.svg"/>
+                <span class="coffee-rates">{{data.rating}}
+                    <span class="coffee-vote-counts" *ngIf="data.votes>0">({{data.votes}} votes)</span>
+                    <span class="coffee-vote-counts" *ngIf="data.votes<=0">No ratings</span>
+
+                </span>
+            </p>
+            <p class="coffee-availstatus" *ngIf="!data.available" pe-auto>Sold Out</p>
+        </div>
+    </div>
+</div>
